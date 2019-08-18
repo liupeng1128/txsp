@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>频道管理</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1347468_6jkrivjmnt9.css">
+    <style>
+        body, span {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content1 {
+            width: 750px;
+            height: 1500px;
+            background-color: #ededed;
+            margin: 0 auto;
+        }
+
+        .content1 > .top1 {
+            width: 750px;
+            height: 40px;
+            border-bottom: 1px solid gray;
+            margin: 0 auto;
+        }
+
+        .content1 > .top1 > .left1 {
+            float: left;
+            margin-top: 10px;
+        }
+
+        .content1 > .top1 > .right1 {
+            float: right;
+            margin-top: 10px;
+        }
+
+        .wen {
+            width: 750px;
+            height: 30px;
+        }
+
+        .wen > .wen_left {
+            float: left;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+
+        .wen > .wen_right {
+            float: right;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+
+        .wen > .wen_right > div:first-child {
+            float: left;
+            /*margin-right: 17px;*/
+        }
+        .wen > .wen_right > div:last-child{
+            margin-top: -3px;
+            float: left;
+        }
+        .checkbox {
+            position: relative;
+            -webkit-appearance: none;
+            width: 35px;
+            height: 15px;
+            line-height: 1.5em;
+            background: #ffffff;
+            border-radius: 1.5em;
+            outline: none;
+        }
+        .checkbox:before {
+            position: absolute;
+            left: 0;
+            content: "";
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #49ff19;
+            box-shadow: 0 0 5px #ffffff;
+            transition: all 0.2s linear;
+        }
+        /*为所有被选中的 input 元素设置背景色：*/
+        .checkbox:checked {
+            background: #ffffff;
+        }
+        .checkbox:checked:before {
+            left: 22px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #ff0203;
+            transition: all 0.2s linear;
+        }
+        .box>{
+            width: 750px;
+            height: 500px;
+            background: #ff13ef;
+        }
+        .box>.box1{
+            width: 750px;
+            height: 60px;
+            margin-bottom: 40px;
+            margin-right: 30px;
+        }
+        .box>.box1>div{
+            width: 60px;
+            height: 40px;
+            float: left;
+            margin-top: 10px;
+            margin-right: 100px;
+            background-color: #ffffff;
+            text-align: center;
+            line-height: 3.5em;
+            font-size: 12px;
+            border: none;
+        }
+        .box>.box1>div:hover{
+            cursor: pointer;
+            color: #ff3c15;
+        }
+        .box>.box1>div:first-child{
+            margin-left: 100px;
+        }
+        .box>.box1>div:last-child{
+            margin-right: 0;
+        }
+        .right1>a{
+            text-decoration-line: none;
+            color: black;
+        }
+        .content{
+            width: 750px;
+            height: 40px;
+        }
+        .content>div{
+            width: 100px;
+            height: 35px;
+            float: left;
+            border-right: 1px solid #ededed;
+            margin-right: 12px;
+            text-align: center;
+            line-height: 2.5em;
+        }
+        .content>div:first-child{
+            margin-left: 40px;
+        }
+        .content>div:last-child{
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="content1">
+    <div class="top1">
+        <div class="left1">
+            频道管理
+        </div>
+        <dvi class="right1">
+            <a href="wo.html"><i class="iconfont icon-guanbi"></i></a>
+        </dvi>
+    </div>
+    <div class="wen">
+        <div class="wen_left">
+            我的频道
+        </div>
+        <div class="wen_right">
+            <div>
+                <span>推荐排序</span>
+                <span>手动排序</span>
+            </div>
+            <div>
+                <input type="checkbox" class="checkbox">
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <div><a href="wo.html">精选</a></div>
+            <div>爱看</div>
+            <div>明日</div>
+            <div>电视剧</div>
+        </div>
+        <div class="box1">
+            <div>电影</div>
+            <div>综艺</div>
+            <div>少儿</div>
+            <div>动漫</div>
+        </div>
+        <div class="box1">
+            <div>NBA</div>
+            <div>纪录片</div>
+            <div>魔道祖师</div>
+            <div>微视</div>
+        </div>
+    </div>
+    <div class="content">
+        <div>影视综</div>
+        <div>时尚生活</div>
+        <div>资讯</div>
+        <div>娱乐</div>
+        <div>衍生</div>
+        <div>其他</div>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <div>斗罗</div>
+            <div>心动</div>
+            <div>暑期档</div>
+            <div>火锅剧</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

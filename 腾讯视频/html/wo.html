@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1344990_5vsmy7u88vd.css">
+    <style>
+        html, body, h3, h4, p{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .nav{
+            width: 750px;
+            display: flex;
+            flex-direction: column;
+            margin:0 auto;
+        }
+        .nav>.top{
+            display: flex;
+            width: 750px;
+            justify-content: space-around;
+            height: 40px;
+            position: fixed;
+            border-bottom: 1px solid #eded;
+            background-color: #fff;
+            z-index: 1;
+        }
+        .nav>.top>div{
+            height: 20px;
+            float: left;
+            padding-top: 10px;
+            width: 50px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .nav>.top>div:hover{
+            cursor: pointer;
+            color: red;
+            font-size: 16px;
+            text-align: center;
+            padding-top: -10px;
+        }
+        .icon-sousuo{
+            color: red;
+        }
+        .nav>.content{
+            flex: 1;
+        }
+        .nav>.content>div:first-child{
+            height: 311px;
+            background-color: #f4f4f4;
+            margin-top: 81px;
+        }
+        .nav>.content>div:nth-child(2){
+            height: 300px;
+        }
+        .nav>.content>div:nth-child(3){
+            height: 300px;
+            background-color: #23ff4f;
+        }
+        .nav>.content>div:nth-child(4){
+            height: 200px;
+            background-color: #ff13ef;
+        }
+        .nav>.footer{
+            display: flex;
+            width: 750px;
+            height: 40px;
+            position: fixed;
+            justify-content: space-around;
+            bottom: 0;
+            background-color: #ffffff;
+        }
+        .nav>footer>div{
+            float: left;
+        }
+        .sx{
+            display: flex;
+            width: 750px;
+            height: 40px;
+            position: fixed;
+            background-color: #ffff;
+            margin-top: 41px;
+            z-index: 1;
+        }
+        .sx>.xx{
+            margin-left: 10px;
+            margin-top: 6px;
+        }
+        .sx>.xx>input{
+            width:200px;
+            height: 30px;
+            border:none;
+            outline: none;
+        }
+        .sx>.xs{
+            position: relative;
+            margin-left: 370px;
+            margin-top: 10px;
+        }
+        .sx>.xs>i{
+            padding-right: 10px;
+        }
+        .icon-94:hover,.icon-huancun:hover,.icon-lishijilu:hover,.icon-zhuanshi:hover{
+            color: red;
+            cursor: pointer;
+        }
+        .lun{
+            width: 750px;
+            height: 400px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .lun>.inner{
+            width: 3750px;
+            height: 336px;
+
+            animation: dong 6s infinite;
+            animation-timing-function: initial;
+        }
+        .lun>.inner>div{
+            float: left;
+        }
+        @keyframes dong {
+            0%{
+                margin-left: 0;
+            }
+            25%{
+                margin-left: -750px;
+            }
+            50%{
+                margin-left: -1500px;
+            }
+            75%{
+                margin-left: -2250px;
+            }
+            100%{
+                margin-left: -3000px;
+            }
+        }
+        .cc{
+            height: 300px;
+            width: 750px;
+
+        }
+        .cc_top{
+            width: 750px;
+            height: 30px;
+            padding-top: 8px;
+            background-color: #ffffff;
+            display: block;
+            clear: both;
+            content: "";
+        }
+        .cc>.cc_top>.cc_topL{
+            float: left;
+            margin-left: 10px;
+        }
+        .cc>.cc_top>.cc_topR{
+            float: right;
+            margin-right: 50px;
+        }
+        .box {
+            width:60px;
+            border:none;
+            overflow: hidden;
+            float: right;
+        }
+        .animate {
+            padding-left: 20px;
+            font-size: 12px;
+            color: #000;
+            display: inline-block;
+            white-space: nowrap;
+            animation: 10s wordsLoop linear infinite normal;
+            margin-top: -10px;
+        }
+
+        @keyframes wordsLoop {
+            0% {
+                transform: translateX(200px);
+                -webkit-transform: translateX(200px);
+            }
+            100% {
+                transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        .cc>.count{
+            height: 200px;
+            width: 750px;
+            margin: 0 auto;
+        }
+        .cc>.count>div{
+            margin-right: 26px;
+        }
+        .cc>.count>div:last-child{
+            margin-right: 0;
+        }
+        .cc>.count>.count1{
+            width: 232px;
+            height: 132px;
+
+            float: left;
+        }
+        .cc>.count>.count2{
+            width: 232px;
+            height: 132px;
+
+            float: left;
+        }
+        .cc>.count>.count3{
+            width: 232px;
+            height: 132px;
+
+            float: left;
+        }
+        .cc>.count>.count1>img,.cc>.count>.count2>img,.cc>.count>.count3>img{
+            border-radius: 0.5em;
+        }
+        .icon-hangkonghangtian-aerospace-xingxing-hangxing{
+            color: yellow;
+        }
+        .count>.count1>p{
+            height: 20px;
+        }
+        .count>.count1>span,.count>.count2>span{
+            font-size: 12px;
+            color: #3c3f41;
+        }
+/*第二个开始*/
+        .cc>.counts{
+            height: 300px;
+            width: 750px;
+            margin: 0 auto;
+        }
+        .cc>.counts>.counts1{
+            width: 370px;
+            height: 232px;
+            border-right: 2px solid #ededed;
+            float: left;
+        }
+        .cc>.counts>.counts2{
+            width: 370px;
+            height: 232px;
+            float: left;
+        }
+        .cc>.counts>.counts1>img,.cc>.counts>.counts2>img{
+            border-radius: 0.5em;
+            width: 100%;
+            height: 100%;
+        }
+        .icon-hangkonghangtian-aerospace-xingxing-hangxing{
+            color: yellow;
+        }
+        .counts>.counts1>p,.counts>.counts2>p{
+            height: 20px;
+        }
+        .counts>.counts1>span,.counts>.counts2>span{
+            font-size: 12px;
+            color: #3c3f41;
+
+        }
+        .footer>div{
+            text-align: center;
+        }
+        .footer>div>p{
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer>div:hover{
+            color: red;
+            cursor: pointer;
+        }
+        .xix{
+            width: 750px;
+            height: 90px;
+            border-top: 1px solid #ededed;
+            margin: 15px auto 0;
+        }
+        .xix>.xix_left{
+            width: 375px;
+            height: 40px;
+
+            float: left;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .xix>.xix_right{
+            position: absolute;
+            width: 375px;
+            height: 40px;
+
+            margin-left: 375px;
+            text-align: center;
+            margin-top: 15px;
+        }
+        .d{
+            width: 750px;
+            height: 100px;
+            background-color: #ffffff;
+        }
+        .xix>.xix_left>i,.xix>.xix_right>i{
+            color: red;
+        }
+        .xix>.xix_left>span,.xix>.xix_right>span{
+            font-size: 12px;
+            color: gray;
+        }
+        .top>div>a{
+            text-decoration-line: none;
+            color: black;
+        }
+        .top>div>a:hover{
+            color: red;
+            cursor: pointer;
+        }
+
+/*第二个结束*/
+    </style>
+</head>
+<body>
+<div class="nav">
+<div class="top">
+    <div>精选</div>
+    <div>爱看</div>
+    <div>明日</div>
+    <div><a href="woo.html" target="_self">电视剧</a></div>
+    <div>电影</div>
+    <div>综艺</div>
+    <div>
+        <a href="频道管理.html"><i class="iconfont icon-caidan"></i></a>
+    </div>
+</div>
+    <div class="sx">
+        <div class="xx">
+            <i class="iconfont icon-sousuo"></i>
+            <input type="text" placeholder="宿州学院[推荐]">
+        </div>
+        <div class="xs">
+            <i class="iconfont icon-94"></i>
+            <i class="iconfont icon-huancun"></i>
+            <i class="iconfont icon-lishijilu"></i>
+            <i class="iconfont icon-zhuanshi"></i>
+        </div>
+    </div>
+<div class="content">
+    <div class="lun">
+        <div class="inner">
+            <div>
+                <img src="../image/1.gif" alt="">
+            </div>
+            <div>
+                <img src="../image/tx2.gif" alt="">
+            </div>
+            <div>
+                <img src="../image/tx3.gif" alt="">
+            </div>
+            <div>
+                <img src="../image/tx4.gif" alt="">
+            </div>
+            <div>
+                <img src="../image/1.gif" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cc">
+        <div class="cc_top">
+            <div class="cc_topL">
+                <span>猜你会追</span>
+                <i class="iconfont icon-xiayige"></i>
+            </div>
+            <div class="cc_topR">
+                <i class="iconfont icon-gonggao_huaban"></i>
+                <div class="box">
+                    <span class="animate">
+                        发红包了 &nbsp; &nbsp; &nbsp; 王一博肖战发红包啦
+                    </span>
+               </div>
+             </div>
+        </div>
+        <div class="count">
+            <div class="count1">
+                <img src="../image/xx1.gif" alt="">
+                <p>死刑！幼儿园老师给学生下老鼠药致死案宣判了</p>
+            </div>
+            <div class="count2">
+            <img src="../image/xx2.gif" alt="">
+            <p>“利奇马”已致28人遇难20人失联 山东进应急状态</p>
+        </div>
+            <div class="count3">
+                <img src="../image/xx3.gif" alt="">
+                <p>范思哲把香港澳门列为国家，品牌代言人杨幂发声明</p>
+            </div>
+        </div>
+        <div class="cc_top">
+            <div class="cc_topL">
+                <span>重磅<i class="iconfont icon-hangkonghangtian-aerospace-xingxing-hangxing"></i>拼团5折购VIP年卡</span>
+                <i class="iconfont icon-xiayige"></i>
+            </div>
+        </div>
+        <div class="counts">
+            <div class="counts1">
+                <img src="../image/sc.gif" alt="">
+                <p>明日之子•燕姿姨母笑</p>
+                <span>Pam焉栩嘉对视弹唱好唯美</span>
+            </div>
+            <div class="counts2">
+                <img src="../image/xx2.gif" alt="">
+                <p>“利奇马”已致28人遇难20人失联山东进应急状态</p>
+                <span>军民协力对抗台风</span>
+            </div>
+        </div>
+        <div class="counts">
+            <div class="counts1">
+                <img src="../image/sc.gif" alt="">
+                <p>明日之子•燕姿姨母笑</p>
+                <span>Pam焉栩嘉对视弹唱好唯美</span>
+            </div>
+            <div class="counts2">
+                <img src="../image/xx2.gif" alt="">
+                <p>“利奇马”已致28人遇难20人失联山东进应急状态</p>
+                <span>军民协力对抗台风</span>
+            </div>
+        </div>
+        <div class="counts">
+            <div class="counts1">
+                <img src="../image/sc.gif" alt="">
+                <p>明日之子•燕姿姨母笑</p>
+                <span>Pam焉栩嘉对视弹唱好唯美</span>
+            </div>
+            <div class="counts2">
+                <img src="../image/xx2.gif" alt="">
+                <p>“利奇马”已致28人遇难20人失联山东进应急状态</p>
+                <span>军民协力对抗台风</span>
+            </div>
+        </div>
+    <div class="xix">
+        <div class="xix_left">
+            <i class="iconfont icon-bofang"></i>
+            <span>新游《执剑之刻》首发</span>
+        </div>
+        <div class="xix_right">
+            <i class="iconfont icon-shuaxin"></i>
+            <span>换一换</span>
+        </div>
+    </div>
+    <div class="d"></div>
+</div>
+</div>
+<div class="footer">
+    <div>
+        <i class="iconfont icon-shouye"></i>
+        <p>首页</p>
+    </div>
+    <div>
+        <i class="iconfont icon-shipin"></i>
+        <p>火锅视频</p>
+    </div>
+    <div>
+        <i class="iconfont icon-vip"></i>
+        <p>VIP会员</p>
+    </div>
+    <div>
+        <i class="iconfont icon-shequ"></i>
+        <p>doki</p>
+    </div>
+    <div>
+        <i class="iconfont icon-gerenzhongxin"></i>
+        <p>个人中心</p>
+    </div>
+</div>
+</div>
+</body>
+</html>
